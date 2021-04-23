@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News View Controller-->
+        <scene sceneID="W94-AR-GpB">
+            <objects>
+                <viewController storyboardIdentifier="NewsViewController" id="tAW-Yz-sh5" customClass="NewsViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5e3-q6-8fy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ikE-8g-6vt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8XP-yw-2Dc"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7UL-3f-rCQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E3N-f5-XLh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ikE-8g-6vt" firstAttribute="trailing" secondItem="E3N-f5-XLh" secondAttribute="trailing" id="M8d-aM-Uq6"/>
+                            <constraint firstItem="7UL-3f-rCQ" firstAttribute="top" secondItem="ikE-8g-6vt" secondAttribute="bottom" id="Mcu-AF-h7V"/>
+                            <constraint firstItem="ikE-8g-6vt" firstAttribute="leading" secondItem="E3N-f5-XLh" secondAttribute="leading" id="PnV-nA-Y0f"/>
+                            <constraint firstItem="E3N-f5-XLh" firstAttribute="bottom" secondItem="7UL-3f-rCQ" secondAttribute="bottom" id="iOm-LU-psp"/>
+                            <constraint firstItem="E3N-f5-XLh" firstAttribute="trailing" secondItem="7UL-3f-rCQ" secondAttribute="trailing" id="pZu-7K-Bfh"/>
+                            <constraint firstItem="ikE-8g-6vt" firstAttribute="top" secondItem="E3N-f5-XLh" secondAttribute="top" id="uBu-C7-aBA"/>
+                            <constraint firstItem="7UL-3f-rCQ" firstAttribute="leading" secondItem="E3N-f5-XLh" secondAttribute="leading" id="zNb-tT-5t7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newsTableView" destination="7UL-3f-rCQ" id="OFj-Lo-e06"/>
+                        <outlet property="searchBar" destination="ikE-8g-6vt" id="Oxu-HK-pvh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBG-NN-GwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

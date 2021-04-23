@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  News
+
+  Created by Musa Kokcen on 14.03.2021.
+  
+*/
+
+"categories" = "Categories";
+"ok" = "Ok";
+"article" = "Article";
+"loadingMoreNews" = "Loading More News";
+"loadingSearchedNews" = "Loading News that includes %@";
+"error" = "Error";
+"loadingNews" = "Loading News";
+"pullToRefresh" = "Pull to refresh";
+"loadingArticle" = "Loading Article";
